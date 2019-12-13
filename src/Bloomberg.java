@@ -13,7 +13,6 @@ public class Bloomberg {
 //        System.out.println(canAttendMeetings(input1));
 
 //        System.out.println(titleToNumber("hi"));
-            System.out.println('A' - 'A' + 1);
     }
 
     public static List<String> topKFrequent(String[] words, int k) {
