@@ -13,12 +13,17 @@ public class Bloomberg {
 //        System.out.println(canAttendMeetings(input1));
 
 //        System.out.println(titleToNumber("hi"));
-        System.out.println(decodeString("3[a]2[bc]"));
+//        System.out.println(decodeString("3[a]2[bc]"));
+//
+//        System.out.println(decodeString("3[a2[c]]"));
+//
+//        System.out.println(decodeString("2[abc]3[cd]ef"));
+//        System.out.println(decodeString("100[leetcode]"));
 
-        System.out.println(decodeString("3[a2[c]]"));
+        int[] inputArray = new int[]{1, 2, 3};
+        System.out.println(permute(inputArray));
 
-        System.out.println(decodeString("2[abc]3[cd]ef"));
-        System.out.println(decodeString("100[leetcode]"));
+
     }
 
     public static List<String> topKFrequent(String[] words, int k) {
@@ -386,5 +391,30 @@ public class Bloomberg {
         }
 
         return 0;
+    }
+
+    public static List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> list = new ArrayList<>();
+        backtrack(list, new ArrayList<>(), nums);
+        return list;
+    }
+
+    private static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums){
+        if(tempList.size() == nums.length){
+            list.add(new ArrayList<>(tempList));
+        } else {
+            for(int i = 0; i < nums.length; i++){
+                if(tempList.contains(nums[i])) {
+                    // System.out.println("i: " + i);
+                    continue; // element already exists, skip
+                }
+                tempList.add(nums[i]);
+                // System.out.println("i: " + i);
+                // System.out.println(tempList);
+                backtrack(list, tempList, nums);
+                tempList.remove(tempList.size() - 1);
+                // System.out.println("remove: " + tempList);
+            }
+        }
     }
 }
