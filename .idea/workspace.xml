@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93ceaf1f-fb56-48da-a5dd-693d308f1cf7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/HashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/HashTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/LongestPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/LongestPalindrome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/LongestSubstring.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/LongestSubstring.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Median.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/Median.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Strings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bloomberg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bloomberg.java" afterDir="false" />
-    </list>
+    <list default="true" id="93ceaf1f-fb56-48da-a5dd-693d308f1cf7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Bloomberg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+            <state relative-caret-position="302">
+              <caret line="262" column="41" lean-forward="true" selection-start-line="262" selection-start-column="41" selection-end-line="262" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -146,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
@@ -301,7 +286,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18849841" />
@@ -318,10 +303,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.261959" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26138613" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.28613862" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.28613862" />
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -400,8 +385,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bloomberg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="302">
+          <caret line="262" column="41" lean-forward="true" selection-start-line="262" selection-start-column="41" selection-end-line="262" selection-end-column="41" />
         </state>
       </provider>
     </entry>
