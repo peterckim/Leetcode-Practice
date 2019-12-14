@@ -13,6 +13,12 @@ public class Bloomberg {
 //        System.out.println(canAttendMeetings(input1));
 
 //        System.out.println(titleToNumber("hi"));
+        System.out.println(decodeString("3[a]2[bc]"));
+
+        System.out.println(decodeString("3[a2[c]]"));
+
+        System.out.println(decodeString("2[abc]3[cd]ef"));
+        System.out.println(decodeString("100[leetcode]"));
     }
 
     public static List<String> topKFrequent(String[] words, int k) {
@@ -243,47 +249,47 @@ public class Bloomberg {
         return sum;
     }
 
-    public  boolean isCousins(TreeNode root, int x, int y) {
-        if (root == null)
-            return false;
-        Queue<TreeNode> queue = new LinkedList<>();
-        boolean xParent = false, yParent = false;
-        queue.add(root);
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-
-            for (int i = 0; i < size; i++) {
-                TreeNode node = queue.poll();
-                // if x and y share same parent.
-                if (node.left != null && node.right != null
-                        && (node.left.val == x && node.right.val == y || node.left.val == y && node.right.val == x)) {
-                    return false;
-                }
-                if (node.left != null) {
-                    queue.add(node.left);
-                    if (node.left.val == x)
-                        xParent = true;
-                    if (node.left.val == y)
-                        yParent = true;
-                }
-                if (node.right != null) {
-                    queue.add(node.right);
-                    if (node.right.val == x)
-                        xParent = true;
-                    if (node.right.val == y)
-                        yParent = true;
-                }
-                if (xParent && yParent)
-                    break;
-            }
-            if (xParent && yParent)
-                return true;
-            if ((xParent && !yParent) || (!xParent && yParent))
-                return false;
-
-        }
-        return false;
-    }
+//    public  boolean isCousins(TreeNode root, int x, int y) {
+//        if (root == null)
+//            return false;
+//        Queue<TreeNode> queue = new LinkedList<>();
+//        boolean xParent = false, yParent = false;
+//        queue.add(root);
+//        while (!queue.isEmpty()) {
+//            int size = queue.size();
+//
+//            for (int i = 0; i < size; i++) {
+//                TreeNode node = queue.poll();
+//                // if x and y share same parent.
+//                if (node.left != null && node.right != null
+//                        && (node.left.val == x && node.right.val == y || node.left.val == y && node.right.val == x)) {
+//                    return false;
+//                }
+//                if (node.left != null) {
+//                    queue.add(node.left);
+//                    if (node.left.val == x)
+//                        xParent = true;
+//                    if (node.left.val == y)
+//                        yParent = true;
+//                }
+//                if (node.right != null) {
+//                    queue.add(node.right);
+//                    if (node.right.val == x)
+//                        xParent = true;
+//                    if (node.right.val == y)
+//                        yParent = true;
+//                }
+//                if (xParent && yParent)
+//                    break;
+//            }
+//            if (xParent && yParent)
+//                return true;
+//            if ((xParent && !yParent) || (!xParent && yParent))
+//                return false;
+//
+//        }
+//        return false;
+//    }
 
     public int firstUniqChar(String s) {
         Set<Character> set = new HashSet();
@@ -302,5 +308,57 @@ public class Bloomberg {
         }
 
         return index;
+    }
+
+    public static String decodeString(String s) {
+        Stack<Character> stackOfCharacters = new Stack();
+        StringBuilder finalString = new StringBuilder();
+
+        for (char c: s.toCharArray()) {
+            if (c == ']') {
+                StringBuilder sb = new StringBuilder();
+                StringBuilder numberString = new StringBuilder();
+                while(!Character.isDigit(stackOfCharacters.peek())) {
+                    if (stackOfCharacters.peek() != '[') {
+                        sb.append(stackOfCharacters.pop());
+                    } else {
+                        stackOfCharacters.pop();
+                    }
+                }
+
+
+                while(!stackOfCharacters.empty()) {
+                    if (Character.isDigit(stackOfCharacters.peek())) {
+                        numberString.append(stackOfCharacters.pop());
+                    } else {
+                        break;
+                    }
+                }
+
+
+                int timesRepeated = Integer.parseInt(numberString.reverse().toString());
+
+                String stringRepeated = sb.reverse().toString();
+                String parsedString = "";
+
+                for (int i = 0; i < timesRepeated; i++) {
+                    parsedString += stringRepeated;
+                }
+
+
+                for (char csb: parsedString.toCharArray()) {
+                    stackOfCharacters.push(csb);
+                }
+
+            } else {
+                stackOfCharacters.push(c);
+            }
+        }
+
+        while(!stackOfCharacters.empty()) {
+            finalString.append(stackOfCharacters.pop());
+        }
+
+        return finalString.reverse().toString();
     }
 }
