@@ -20,8 +20,11 @@ public class Bloomberg {
 //        System.out.println(decodeString("2[abc]3[cd]ef"));
 //        System.out.println(decodeString("100[leetcode]"));
 
-        int[] inputArray = new int[]{1, 2, 3};
-        System.out.println(permute(inputArray));
+//        int[] inputArray = new int[]{1, 2, 3};
+//        System.out.println(permute(inputArray));
+
+        int[] inputArray = new int[]{0, 0, 0};
+        System.out.println(findPairs(inputArray, 0));
 
 
     }
@@ -418,6 +421,9 @@ public class Bloomberg {
         }
     }
 
+    /*
+        Dynamic Programming
+     */
     public static int rob(int[] nums) {
         return rob(nums, nums.length - 1);
     }
@@ -427,5 +433,54 @@ public class Bloomberg {
             return 0;
         }
         return Math.max(rob(nums, i - 2) + nums[i], rob(nums, i - 1));
+    }
+
+    /*
+        Divide and Conquer + Dynamic Programming + Array
+     */
+    public int maxSubArray(int[] nums) {
+        /*
+            Input: [-2,1,-3,4,-1,2,1,-5,4],
+            Output: 6
+            Explanation: [4,-1,2,1] has the largest sum = 6.
+         */
+
+        /*
+            Steps:
+            1. Find the Max contiguous sequence that starts with index 0, 1, 2, ... N
+            2. Find the max between those results
+         */
+        return 0;
+    }
+
+    public static int findPairs(int[] nums, int k) {
+        /*
+            Input: [3, 1, 4, 1, 5], k = 2
+            Output: 2
+            Explanation: There are two 2-diff pairs in the array, (1, 3) and (3, 5).
+            Although we have two 1s in the input, we should only return the number of unique pairs.
+         */
+        int count = 0;
+        int used = 100000000;
+        Set<Integer> repeatCheck= new HashSet();
+
+        Arrays.sort(nums);
+
+
+        for (int i = 0; i < nums.length; i++) {
+            if (!repeatCheck.contains(nums[i])) {
+                repeatCheck.add(nums[i]);
+            }
+
+            for (int j = i+1; j < nums.length; j++) {
+                if (Math.abs(nums[i] - nums[j]) == k && nums[j] != used) {
+                    used = nums[j];
+                    repeatCheck.add(nums[j]);
+                    count++;
+                }
+            }
+        }
+
+        return count;
     }
 }

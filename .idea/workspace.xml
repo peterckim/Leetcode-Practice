@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ceaf1f-fb56-48da-a5dd-693d308f1cf7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$1.class" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$2.class" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg.class" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bloomberg.java" afterPath="$PROJECT_DIR$/src/Bloomberg.java" />
     </list>
@@ -78,11 +81,11 @@
       <file leaf-file-name="Bloomberg.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Bloomberg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="427" column="9" lean-forward="true" selection-start-line="427" selection-start-column="9" selection-end-line="427" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="454" column="0" lean-forward="true" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
               <folding>
-                <element signature="e#12676#12677#0" expanded="true" />
-                <element signature="e#12725#12726#0" expanded="true" />
+                <element signature="e#12825#12826#0" expanded="true" />
+                <element signature="e#12874#12875#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -393,7 +396,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -502,8 +505,8 @@
         <state relative-caret-position="5655">
           <caret line="387" column="17" lean-forward="false" selection-start-line="387" selection-start-column="17" selection-end-line="387" selection-end-column="17" />
           <folding>
-            <element signature="e#12676#12677#0" expanded="true" />
-            <element signature="e#12725#12726#0" expanded="true" />
+            <element signature="e#12825#12826#0" expanded="true" />
+            <element signature="e#12874#12875#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -580,11 +583,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Bloomberg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="427" column="9" lean-forward="true" selection-start-line="427" selection-start-column="9" selection-end-line="427" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="454" column="0" lean-forward="true" selection-start-line="454" selection-start-column="0" selection-end-line="454" selection-end-column="0" />
           <folding>
-            <element signature="e#12676#12677#0" expanded="true" />
-            <element signature="e#12725#12726#0" expanded="true" />
+            <element signature="e#12825#12826#0" expanded="true" />
+            <element signature="e#12874#12875#0" expanded="true" />
           </folding>
         </state>
       </provider>
