@@ -23,8 +23,11 @@ public class Bloomberg {
 //        int[] inputArray = new int[]{1, 2, 3};
 //        System.out.println(permute(inputArray));
 
-        int[] inputArray = new int[]{0, 0, 0};
-        System.out.println(findPairs(inputArray, 0));
+
+        List<String> wordDict = new ArrayList<>();
+        wordDict.add("leet");
+        wordDict.add("code");
+        System.out.println(wordBreak("leetcode", wordDict));
 
 
     }
@@ -521,5 +524,29 @@ public class Bloomberg {
         }
 
         return null;
+    }
+
+    public int minHeightShelves(int[][] books, int shelf_width) {
+        /*
+            Input: books = [[1,1],[2,3],[2,3],[1,1],[1,1],[1,1],[1,2]], shelf_width = 4
+            Output: 6
+            Explanation: The sum of the heights of the 3 shelves are 1 + 3 + 2 = 6.
+                Notice that book number 2 does not have to be on the first shelf.
+         */
+
+        return 1;
+    }
+
+    public static boolean wordBreak(String s, List<String> wordDict) {
+        /*
+            Input: s = "leetcode", wordDict = ["leet", "code"]
+            Output: true
+            Explanation: Return true because "leetcode" can be segmented as "leet code".
+         */
+        return false;
+    }
+
+    public List<List<Integer>> threeSum(int[] nums) {
+
     }
 }
