@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ceaf1f-fb56-48da-a5dd-693d308f1cf7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DynamicProgramming.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Greedy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HackerRank.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$1.class" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$2.class" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg.class" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/Bloomberg.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/ListNode.class" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/ListNode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeetCode Practice/Greedy.class" afterPath="$PROJECT_DIR$/out/production/LeetCode Practice/Greedy.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bloomberg.java" afterPath="$PROJECT_DIR$/src/Bloomberg.java" />
     </list>
@@ -25,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LongestPalindrome.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LongestPalindrome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="66" column="28" lean-forward="false" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Strings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Strings.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,11 +63,27 @@
       <file leaf-file-name="Bloomberg.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bloomberg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="549" column="0" lean-forward="false" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="640" column="41" lean-forward="false" selection-start-line="640" selection-start-column="32" selection-end-line="640" selection-end-column="41" />
               <folding>
-                <element signature="e#12897#12898#0" expanded="true" />
-                <element signature="e#12946#12947#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1150#1159#0" expanded="true" />
+                <element signature="e#13080#13081#0" expanded="true" />
+                <element signature="e#13129#13130#0" expanded="true" />
+                <element signature="e#17412#17435#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HackerRank.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/HackerRank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="171" column="8" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="193" selection-end-column="33" />
+              <folding>
+                <element signature="e#315#324#0" expanded="true" />
+                <marker date="1576686623103" expanded="true" signature="4968:5310" ph="..." />
               </folding>
             </state>
           </provider>
@@ -96,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DynamicProgramming.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DynamicProgramming.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DynamicProgramming.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
+            <state relative-caret-position="1320">
               <caret line="88" column="1" lean-forward="true" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
               <folding>
                 <element signature="e#1294#1295#0" expanded="true" />
@@ -150,6 +155,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>palindrom</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -172,12 +182,14 @@
         <option value="$PROJECT_DIR$/src/DynamicProgramming.java" />
         <option value="$PROJECT_DIR$/src/Greedy.java" />
         <option value="$PROJECT_DIR$/src/Bloomberg.java" />
+        <option value="$PROJECT_DIR$/src/HackerRank.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="793" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -232,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Bloomberg">
+  <component name="RunManager" selected="Application.HackerRank">
     <configuration name="Bloomberg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Bloomberg" />
@@ -261,6 +273,20 @@
       <module name="LeetCode Practice" />
       <envs />
     </configuration>
+    <configuration name="HackerRank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="HackerRank" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LeetCode Practice" />
+      <envs />
+    </configuration>
     <configuration name="HashTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="HashTable" />
@@ -278,20 +304,6 @@
     <configuration name="LongestPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="LongestPalindrome" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="LeetCode Practice" />
-      <envs />
-    </configuration>
-    <configuration name="Strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Strings" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -393,18 +405,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Bloomberg" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Strings" />
-      <item index="2" class="java.lang.String" itemvalue="Application.LongestPalindrome" />
-      <item index="3" class="java.lang.String" itemvalue="Application.HashTable" />
-      <item index="4" class="java.lang.String" itemvalue="Application.DynamicProgramming" />
+      <item index="1" class="java.lang.String" itemvalue="Application.LongestPalindrome" />
+      <item index="2" class="java.lang.String" itemvalue="Application.HashTable" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DynamicProgramming" />
+      <item index="4" class="java.lang.String" itemvalue="Application.HackerRank" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Bloomberg" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DynamicProgramming" />
-        <item index="2" class="java.lang.String" itemvalue="Application.HashTable" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LongestPalindrome" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Strings" />
+        <item index="0" class="java.lang.String" itemvalue="Application.HackerRank" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Bloomberg" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DynamicProgramming" />
+        <item index="3" class="java.lang.String" itemvalue="Application.HashTable" />
+        <item index="4" class="java.lang.String" itemvalue="Application.LongestPalindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -539,8 +551,11 @@
         <state relative-caret-position="5655">
           <caret line="387" column="17" lean-forward="false" selection-start-line="387" selection-start-column="17" selection-end-line="387" selection-end-column="17" />
           <folding>
-            <element signature="e#12897#12898#0" expanded="true" />
-            <element signature="e#12946#12947#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1150#1159#0" expanded="true" />
+            <element signature="e#13080#13081#0" expanded="true" />
+            <element signature="e#13129#13130#0" expanded="true" />
+            <element signature="e#17412#17435#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -569,14 +584,6 @@
             <element signature="e#1474#1475#0" expanded="true" />
             <element signature="e#1503#1504#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -615,17 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bloomberg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="549" column="0" lean-forward="false" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
-          <folding>
-            <element signature="e#12897#12898#0" expanded="true" />
-            <element signature="e#12946#12947#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Greedy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
@@ -638,13 +634,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DynamicProgramming.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
+        <state relative-caret-position="1320">
           <caret line="88" column="1" lean-forward="true" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
           <folding>
             <element signature="e#1294#1295#0" expanded="true" />
             <element signature="e#1334#1335#0" expanded="true" />
             <element signature="e#1571#1572#0" expanded="true" />
             <element signature="e#1613#1614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bloomberg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="640" column="41" lean-forward="false" selection-start-line="640" selection-start-column="32" selection-end-line="640" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1150#1159#0" expanded="true" />
+            <element signature="e#13080#13081#0" expanded="true" />
+            <element signature="e#13129#13130#0" expanded="true" />
+            <element signature="e#17412#17435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HackerRank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="171" column="8" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="193" selection-end-column="33" />
+          <folding>
+            <element signature="e#315#324#0" expanded="true" />
+            <marker date="1576686623103" expanded="true" signature="4968:5310" ph="..." />
           </folding>
         </state>
       </provider>

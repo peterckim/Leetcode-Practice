@@ -1,4 +1,7 @@
+import javafx.util.Pair;
+
 import java.util.*;
+import java.util.LinkedList;
 
 public class Bloomberg {
     public static void main(String[] args) {
@@ -24,10 +27,14 @@ public class Bloomberg {
 //        System.out.println(permute(inputArray));
 
 
-        List<String> wordDict = new ArrayList<>();
-        wordDict.add("leet");
-        wordDict.add("code");
-        System.out.println(wordBreak("leetcode", wordDict));
+//        List<String> wordDict = new ArrayList<>();
+//        wordDict.add("leet");
+//        wordDict.add("code");
+//        System.out.println(wordBreak("leetcode", wordDict));
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        res.add(2);
+        System.out.println(res.size());
+
 
 
     }
@@ -546,7 +553,125 @@ public class Bloomberg {
         return false;
     }
 
-    public List<List<Integer>> threeSum(int[] nums) {
+    public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        int wordLength = beginWord.length();
+        Map<String, ArrayList<String>> combinations = new HashMap();
 
+        wordList.forEach(word -> {
+            for (int i = 0; i < wordLength; i++) {
+                String newWord = word.substring(0, i) + "*" + word.substring(i + 1, wordLength);
+                ArrayList<String> adjacents = combinations.getOrDefault(newWord, new ArrayList<String>());
+                adjacents.add(word);
+                combinations.put(newWord, adjacents);
+            }
+        });
+
+        /* Queue for BFS */
+        Queue<Pair<String, Integer>> Q = new LinkedList<Pair<String, Integer>>();
+        Q.add(new Pair(beginWord, 1));
+
+        Set<String> visited = new HashSet();
+        visited.add(beginWord);
+
+        while(!Q.isEmpty()) {
+            Pair<String, Integer> node = Q.remove();
+            String word = node.getKey();
+            int level = node.getValue();
+            for (int i = 0; i < wordLength; i++) {
+                String newWord = word.substring(0, i) + '*' + word.substring(i + 1, wordLength);
+
+                for (String adjacentWord : combinations.getOrDefault(newWord, new ArrayList<String>())) {
+                    if (adjacentWord.equals(endWord)) {
+                        return level + 1;
+                    }
+                    if (!visited.contains(adjacentWord)) {
+                        visited.add(adjacentWord);
+                        Q.add(new Pair(adjacentWord, level + 1));
+                    }
+                }
+            }
+        }
+
+        return 0;
     }
+
+    public static boolean isValidBST(TreeNode root) {
+        /*
+            Steps:
+                1: Do an In-order Traversal.
+                2: If the array is sorted from least to greatest in value. It is valid.
+        */
+        Stack<TreeNode> dfsStack = new Stack();
+        ArrayList<TreeNode> resList = new ArrayList();
+        boolean done = false;
+
+        /*
+            In-Order Traversal Using Stack
+         */
+        TreeNode currentNode = root;
+
+
+        while(!done) {
+            if (currentNode != null) {
+                dfsStack.push(currentNode);
+                currentNode = currentNode.left;
+            } else {
+                if (!dfsStack.empty()) {
+                    currentNode = dfsStack.pop();
+                    resList.add(currentNode);
+                    currentNode = currentNode.right;
+                } else {
+                    done = true;
+                }
+            }
+        }
+        /*
+            Check if the Array is sorted
+            Time Complexity: O(N)
+         */
+        for (int i = 1; i < resList.size(); i++) {
+            if (resList.get(i).val <= resList.get(i - 1).val) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static String longestPalindrome(String s) {
+        /*
+            Dynamic Programming
+                1. Recursion Method
+                2. Memoization
+         */
+        int n = s.length(); // Length of s
+        String res = null;  // Initialize res variable
+
+        boolean[][] dp = new boolean[n][n];     // Create a table
+
+        for (int i = n - 1; i >= 0; i--) {  // Pointer from the back of the array
+            for (int j = i; j < n; j++) {   // Pointer from the i to the end of the array
+                dp[i][j] = s.charAt(i) == s.charAt(j) && (j - i < 3 || dp[i + 1][j - 1]);   // Return true if s[i] == s[j] AND (j - i < 3 OR dp[i + 1][j - 1])
+
+                if (dp[i][j] && (res == null || j - i + 1 > res.length())) {    // if the string is a palindrome where i and j are AND res is null (so no res yet) OR the length of the substring is greater than current res's length
+                    res = s.substring(i, j + 1);    // update res to the substring between i and j pointers
+                }
+            }
+        }
+
+        if (s.isEmpty()) {
+            res = "";
+        }
+
+        return res;
+    }
+
+//    public static List<Integer> rightSideView(TreeNode root) {
+//        /*
+//            PostOrder Traversal
+//            Get the last tree depth numbers from the traversal
+//         */
+//
+//
+//    }
 }
