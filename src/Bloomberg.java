@@ -31,13 +31,68 @@ public class Bloomberg {
 //        wordDict.add("leet");
 //        wordDict.add("code");
 //        System.out.println(wordBreak("leetcode", wordDict));
-        ArrayList<Integer> res = new ArrayList<Integer>();
-        res.add(2);
-        System.out.println(res.size());
+//        ArrayList<Integer> res = new ArrayList<Integer>();
+//        res.add(2);
+//        System.out.println(res.size());
 
 
-
+//        System.out.println(isSubsequence("agc", "ahbgdc"));
     }
+
+    public static boolean isSubsequence(String s, String t) {
+        boolean memo[] = new boolean[s.length()];
+
+
+        if (s.length() == 0) {
+            return true;
+        }
+
+        if(t.contains(s.substring(s.length() - 1))) {
+            int indexOf = t.lastIndexOf(s.substring(s.length() - 1));
+            return true && isSubsequence(s.substring(0, s.length() - 1), t.substring(0, indexOf));
+        }
+
+        return false;
+    }
+
+//    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+//        Stack<ListNode> s1 = new Stack();
+//        Stack<ListNode> s2 = new Stack();
+//        int multiplier = 1;
+//        int sum = 0;
+//
+//        while (l1 != null) {
+//            s1.push(l1);
+//            l1 = l1.next;
+//        }
+//
+//        while(l2 != null) {
+//            s2.push(l2);
+//            l2 = l2.next;
+//        }
+//
+//        Stack<ListNode> biggerStack = (s1.size() >= s2.size()) ? s1 : s2;
+//
+//        while(!biggerStack.empty()) {
+//            ListNode first = s1.pop();
+//            ListNode second = new ListNode(0);
+//
+//            if (!s2.empty()) {
+//                second = s2.pop();
+//            }
+//
+//            sum += (first.val * multiplier) + (second.val * multiplier);
+//            multiplier *= 10;
+//        }
+//
+//
+//        String temp = Integer.toString(sum);
+//        for (int i = 0; i < temp.length() - 1; i++)
+//        {
+//            ListNode curr = new ListNode(Character.getNumericValue(temp.charAt(i)));
+//            ListNode next = new ListNode(Character.getNumericValue(temp.charAt(i + 1)));
+//        }
+//    }
 
     public static List<String> topKFrequent(String[] words, int k) {
         /*

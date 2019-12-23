@@ -10,16 +10,22 @@ public class HackerRank {
 
 
 
-        ArrayList<Integer> inputArray = new ArrayList<Integer>();
-        inputArray.add(1);
-        inputArray.add(7);
-        inputArray.add(2);
-        inputArray.add(4);
+//        ArrayList<Integer> inputArray = new ArrayList<Integer>();
+//        inputArray.add(1);
+//        inputArray.add(7);
+//        inputArray.add(2);
+//        inputArray.add(4);
 
 
 //        System.out.println(inputArray.subList(0, inputArray.size() - 1));
 
-        System.out.println(nonDivisibleSubset(3, inputArray));
+//        System.out.println(nonDivisibleSubset(3, inputArray));
+
+//        String input = "ifailuhkqq";
+//        char[] sToArray = input.toCharArray();
+//        System.out.println(Arrays.copyOfRange(sToArray, 0, 3));
+
+//        System.out.println(sherlockAndAnagrams("kkkk"));
     }
 
 //    public static int[] climbingLeaderboard(int[] scores, int[] alice) {
@@ -192,6 +198,40 @@ public class HackerRank {
 
 
         System.out.println(flag);
+    }
+
+    public static int sherlockAndAnagrams(String s) {
+        /*
+            "ifailuhqq"
+            "ifa, fai, i, i, q, q"
+         */
+
+        char[] sToArray = s.toCharArray();
+        Set<String> wordBank = new HashSet();
+        int count = 0;
+
+        for (int i = 0; i < sToArray.length; i++) {
+            if (i == sToArray.length - 1) {
+                if (sToArray[i] == sToArray[i - 1]) {
+                    count++;
+                }
+            }
+            for (int j = i + 1; j < sToArray.length; j++) {
+                StringBuilder sbInner = new StringBuilder();
+                char[] subArray = Arrays.copyOfRange(sToArray, i, j);
+                Arrays.sort(subArray);
+                for (char c: subArray) {
+                    sbInner.append(c);
+                }
+                if (wordBank.contains(sbInner.toString())) {
+                    System.out.println("second if: " + sbInner.toString());
+                    count++;
+                }
+                wordBank.add(sbInner.toString());
+            }
+        }
+
+        return count;
     }
 
 }
