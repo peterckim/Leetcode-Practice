@@ -2,13 +2,11 @@ import java.util.Arrays;
 import java.util.Map;
 
 public class DynamicProgramming {
+    /*
+        Main Method
+     */
     public static void main(String[] args) {
-        int[] input = new int[]{1,2,3,4};
-//        int[] newArray = Arrays.copyOfRange(input, 1, input.length);
-//        for (int i = 0; i < newArray.length; i++) {
-//            System.out.println(newArray[i]);
-//        }
-        System.out.println(numberOfArithmeticSlices(input));
+
     }
 
     /*
