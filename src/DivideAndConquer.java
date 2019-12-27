@@ -12,6 +12,13 @@ public class DivideAndConquer {
     }
 
     /*
+        Solution to Leetcode Problem 312: Burst Balloons
+     */
+    public static int maxCoins(int[] nums) {
+        return 0;
+    }
+
+    /*
         Solution to Leetcode Problem 240: Search a 2D Matrix II
         Start from top-right number.
         If target is greater than number, eliminate current row. If target is less than number, eliminate current col
@@ -104,13 +111,6 @@ public class DivideAndConquer {
 
         /* If one of the quads returns true, the target does exist in the matrix */
         return quad1 || quad2 || quad3 || quad4;
-    }
-
-    /*
-        Solution to Leetcode Problem 312: Burst Balloons
-     */
-    public static int maxCoins(int[] nums) {
-        return 0;
     }
 
     public static void mergeSort(int arr[], int l, int r) {
