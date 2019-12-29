@@ -32,7 +32,7 @@ public class BFS {
             /* Get number of current leaf nodes */
             int size = q.size();
 
-            /* Add next leaf nodes */
+            /* Add leaf nodes */
             for (int j = 0; j < size; j++) {
                 String curr = q.poll();
                 char[] chs = curr.toCharArray();
