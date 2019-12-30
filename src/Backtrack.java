@@ -7,6 +7,27 @@ public class Backtrack {
         System.out.println(getMaximumGold(grid));
     }
 
+//    public String[] expand(String S) {
+//
+//    }
+//
+//    public String[] expandBacktrack(String S, String[] list, String tempString) {
+//        boolean open = false;
+//        for (int i = 0; i < S.length(); i++) {
+//            if (S.charAt(i) == '{') {
+//                open = true;
+//            }
+//            if (S.charAt(i) == '}') {
+//                open = false;
+//            }
+//
+//            if (open) {
+//
+//            }
+//
+//        }
+//    }
+
     public static ArrayList<String> printAllPermutations(String s) {
         ArrayList<String> res = new ArrayList<>();
         int length = s.length();

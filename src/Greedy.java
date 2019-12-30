@@ -4,58 +4,30 @@ import java.util.Map;
 public class Greedy {
     public static void main(String[] args) {
 
+        int[][] trips = new int[][]{{2,1,5}, {3,3,7}};
+
+        System.out.println(carPooling(trips, 4));
     }
 
-    public boolean lemonadeChange(int[] bills) {
-        Map<Integer, Integer> bank = new HashMap<>();
-        bank.put(5, 0);
-        bank.put(10, 0);
-        bank.put(20, 0);
+    public static boolean carPooling(int[][] trips, int capacity) {
+        /* Create an array of every stop */
+        int[] stops = new int[1001];
 
-        for (int i = 0; i < bills.length; i++) {
-            switch (bills[i]) {
-                case 5:
-                    bank.put(5, bank.get(5) + 1);
-                    break;
-                case 10:
-                    if (bank.get(5) >= 1) {
-                        bank.put(5, bank.get(5) - 1);
-                        bank.put(10, bank.get(10) + 1);
-                    } else {
-                        return false;
-                    }
-
-                    break;
-                case 20:
-                    if (bank.get(5) >= 1 && bank.get(10) >= 1) {
-                        bank.put(5, bank.get(5) - 1);
-                        bank.put(10, bank.get(10) - 1);
-                        bank.put(20, bank.get(20) + 1);
-                    } else if (bank.get(10) < 1 && bank.get(5) >= 3) {
-                        bank.put(5, bank.get(5) - 3);
-                        bank.put(20, bank.get(20) + 1);
-                    } else {
-                        return false;
-                    }
-
-                    break;
-            }
+        /* At each stop add the number of passengers getting in or subtract the number of passengers getting out */
+        for (int t[] : trips) {
+            stops[t[1]] += t[0];
+            stops[t[2]] -= t[0];
         }
 
-        return true;
-    }
-
-    public int largestSumAfterKNegations(int[] A, int K) {
-        /*
-            Input: A = [2,-3,-1,5,-4], K = 2
-            Output: 13
-            Explanation: Choose indices (1, 4) and A becomes [2,3,-1,5,4].
-         */
+        /* At each stop, subtract from capacity the number of passengers getting in, or add to capacity the number of passengers getting off */
+        for (int i = 0; capacity >= 0 && i < 1001; ++i) {
+            capacity -= stops[i];
+        }
 
         /*
-            Sort the array,
-            Change the first K numbers signs
+            If capacity ever becomes negative, return false because the car can't accept all trips.
+                If capacity is not negative, it is possible so return true.
          */
-        return 0;
+        return capacity >= 0;
     }
 }
