@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ceaf1f-fb56-48da-a5dd-693d308f1cf7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/General.java" afterPath="$PROJECT_DIR$/src/General.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,16 +44,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="General.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="General.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/General.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="2916">
               <caret line="301" column="127" lean-forward="false" selection-start-line="301" selection-start-column="127" selection-end-line="301" selection-end-column="127" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3186#3187#0" expanded="true" />
                 <element signature="e#3256#3257#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="325" column="0" lean-forward="true" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,6 +149,7 @@
         <option value="$PROJECT_DIR$/src/Backtrack.java" />
         <option value="$PROJECT_DIR$/src/Greedy.java" />
         <option value="$PROJECT_DIR$/src/General.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -170,11 +181,6 @@
             <path>
               <item name="Leetcode-Practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="Leetcode-Practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Leetcode-Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Leetcode-Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -668,13 +674,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/General.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="2916">
           <caret line="301" column="127" lean-forward="false" selection-start-line="301" selection-start-column="127" selection-end-line="301" selection-end-column="127" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3186#3187#0" expanded="true" />
             <element signature="e#3256#3257#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="325" column="0" lean-forward="true" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
