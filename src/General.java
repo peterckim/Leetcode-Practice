@@ -168,7 +168,82 @@ public class General {
      * @return      res -> 4
      */
     public int search(int[] nums, int target) {
-        return 4;
+        /* If nums is empty, return -1 */
+        if (nums.length == 0) {
+            return -1;
+        }
+
+        /* If nums only has 1 number, check if that number is target and return */
+        if (nums.length == 1) {
+            return nums[0] == target ? 0 : -1;
+        }
+
+        /* Find rotation index */
+        int rotation_index = findRotationIndex(nums, 0, nums.length - 1);
+
+        /*
+            If
+                the rotation index number is target, return rotation index
+            Else if
+                rotation index is 0, there has been no rotation; thus, run a binary search on the entire array
+            Else
+                target is less than first element, the target has to be after the rotation
+                OR
+                target is greater than or equal to first element, so it has to be before the rotation
+        */
+        if (nums[rotation_index] == target) {
+            return rotation_index;
+        } else if (rotation_index == 0) {
+            return search(nums, target, 0, nums.length - 1);
+        } else {
+            return (target >= nums[0]) ? search(nums, target, 0, rotation_index) : search(nums, target, rotation_index, nums.length - 1);
+        }
+    }
+
+    /**
+     * @function    Binary Search
+     */
+    public int search(int[] nums, int target, int left, int right) {
+        while (left <= right) {
+            int pivot = (right + left) / 2;
+
+            if (nums[pivot] == target) {
+                return pivot;
+            } else {
+                if (target < nums[pivot]) {
+                    right = pivot - 1;
+                } else {
+                    left = pivot + 1;
+                }
+            }
+        }
+
+        return -1;
+    }
+
+    /**
+     * @function Find the Rotation Index
+     */
+    public int findRotationIndex(int[] nums, int left, int right) {
+        if (nums[left] < nums[right]) {
+            return 0;
+        }
+
+        while (left <= right) {
+            int pivot = (right + left) / 2;
+
+            if (nums[pivot] > nums[pivot + 1]) {
+                return pivot + 1;
+            } else {
+                if (nums[pivot] < nums[left]) {
+                    right = pivot - 1;
+                } else {
+                    left = pivot + 1;
+                }
+            }
+        }
+
+        return 0;
     }
 
     /**
