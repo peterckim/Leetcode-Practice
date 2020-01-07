@@ -1,6 +1,9 @@
 src/Data_Structures
-Data_Structures
 src/DataStructures/*
+src/DataStructures/*
+src/DataStructures/LinkedList.java
+src/DataStructures/Stack.java
 
+src/Playground
 src/Playground/*
-Playground
+src/Playground/Playground.java
