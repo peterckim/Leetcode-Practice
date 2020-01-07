@@ -1,12 +1,48 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Greedy {
     public static void main(String[] args) {
 
-        int[][] trips = new int[][]{{2,1,5}, {3,3,7}};
+        int[][] trips = new int[][]{{10, 16}, {2, 8}, {1, 6}, {7, 12}};
 
-        System.out.println(carPooling(trips, 4));
+        System.out.println(findMinArrowShots(trips));
+    }
+
+    public static int findMinArrowShots(int[][] points) {
+        /*
+            Solution:
+                1. Sort the balloons by their right-most pos.
+                2. Pop balloons at their right-most pos. Next pop the next unpopped balloon at its right-most pos
+         */
+
+        /* Base Case: If there are no balloons, you don't need any arrows */
+        if (points.length == 0) {
+            return 0;
+        }
+
+        /* Sort the balloons by their right-most pos */
+        Arrays.sort(points, (a, b) -> a[1] - b[1]);
+
+        /* Instantiate firstArrowPosition and arrowCount to first arrow shot */
+        int arrowPos = points[0][1];
+        int arrowCnt = 1;
+
+        /* Loop through balloons and increment arrowCount and arrowPosition for unpopped balloons */
+        for (int i = 1; i < points.length; i++) {
+            /* Continue if balloon has already been popped by an arrow */
+            if (arrowPos >= points[i][0]) {
+                continue;
+            }
+
+            /* Increment values if unpopped balloon */
+            arrowCnt += 1;
+            arrowPos = points[i][1];
+        }
+
+        /* Return the number of arrows required */
+        return arrowCnt;
     }
 
     public static boolean carPooling(int[][] trips, int capacity) {
