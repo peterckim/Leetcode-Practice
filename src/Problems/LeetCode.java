@@ -17,6 +17,12 @@ public class LeetCode {
      * @return      res -> 6
      */
     public int maxProduct(int[] nums) {
+        /*
+            Thoughts
+                1. Must have an even number of negatives
+                2. Avoid 0's
+         */
+
         return 0;
     }
 
@@ -193,36 +199,5 @@ public class LeetCode {
         }
 
         return res;
-
-
-        /*  BRUTE FORCE ALGORITHM USING A HASH SET. IT WORKS, BUT VERY SLOW. NOT OPTIMIZED AT ALL. VIEW ABOVE ALGORITHM INSTEAD */
-
-        /*
-            List<List<Integer>> res = new LinkedList<>();
-            for (int i = 0; i < nums.length; i++) {
-                int init_number = nums[i];
-                Set<Integer> numberBank = new HashSet<>();
-                for (int j = i + 1; j < nums.length; j++) {
-                    int curr_number = nums[j];
-                    int needed_number = -1 * (init_number + curr_number);
-
-                    if (numberBank.contains(needed_number)) {
-                        List<Integer> curr_res = new ArrayList<>();
-                        curr_res.add(init_number);
-                        curr_res.add(curr_number);
-                        curr_res.add(needed_number);
-
-                        Collections.sort(curr_res);
-
-                        if (!res.contains(curr_res)) {
-                            res.add(curr_res);
-                        }
-                    }
-                    numberBank.add(curr_number);
-                }
-            }
-
-            return res;
-        */
     }
 }
