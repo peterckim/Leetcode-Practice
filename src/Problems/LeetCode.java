@@ -9,6 +9,18 @@ public class LeetCode {
     }
 
     /**
+     * @problem     152. Maximum Product Subarray
+     * @link        https://leetcode.com/problems/maximum-product-subarray/
+     * @tags        [Array, Dynamic Programming]
+     * @difficulty  Medium
+     * @param       nums -> [2,3,-2,4]
+     * @return      res -> 6
+     */
+    public int maxProduct(int[] nums) {
+        return 0;
+    }
+
+    /**
      * @problem     153. Find Minimum in Rotated Sorted Array
      * @link        https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
      * @tags        [Array, Binary Search]
