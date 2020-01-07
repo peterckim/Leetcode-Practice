@@ -1,4 +1,4 @@
-<a href="http://peterckim.com"><img src="images/logo.png" title="Peter Kim" alt="Peter Kim"></a>
+<a href="http://peterckim.com"><img src="assets/logo.png" title="Peter Kim" alt="Peter Kim"></a>
 
 # NBA DFS API
 
