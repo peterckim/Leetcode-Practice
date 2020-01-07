@@ -6,7 +6,45 @@ import java.util.List;
 
 public class LeetCode {
     public static void main(String[] args) {
-        System.out.println("hi");
+    }
+
+    /**
+     * @problem     153. Find Minimum in Rotated Sorted Array
+     * @link        https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+     * @tags        [Array, Binary Search]
+     * @difficulty  Medium
+     * @param       nums -> [3,4,5,1,2]
+     * @return      res -> 1
+     */
+    public int findMin(int[] nums) {
+        /* if nums is empty, return -1 */
+        if (nums.length == 0) return -1;
+
+        /* if nums has 1 element, or is not rotated, return first element */
+        if (nums.length == 1 || (nums[0] < nums[nums.length - 1])) return nums[0];
+
+        return findMin(nums, 0, nums.length - 1);
+    }
+
+    /**
+     * @function Find the Minimum
+     */
+    public int findMin(int[] nums, int left, int right) {
+        while (left <= right) {
+            int pivot = (left + right) / 2;
+
+            if (nums[pivot] > nums[pivot + 1]) {
+                return nums[pivot + 1];
+            } else {
+                if (nums[pivot] < nums[left]) {
+                    right = pivot - 1;
+                } else {
+                    left = pivot + 1;
+                }
+            }
+        }
+
+        return -1;
     }
 
 
@@ -21,14 +59,10 @@ public class LeetCode {
      */
     public int search(int[] nums, int target) {
         /* If nums is empty, return -1 */
-        if (nums.length == 0) {
-            return -1;
-        }
+        if (nums.length == 0) return -1;
 
         /* If nums only has 1 number, check if that number is target and return */
-        if (nums.length == 1) {
-            return nums[0] == target ? 0 : -1;
-        }
+        if (nums.length == 1) return nums[0] == target ? 0 : -1;
 
         /* Find rotation index */
         int rotation_index = findRotationIndex(nums, 0, nums.length - 1);
@@ -77,9 +111,7 @@ public class LeetCode {
      * @function Find the Rotation Index
      */
     public int findRotationIndex(int[] nums, int left, int right) {
-        if (nums[left] < nums[right]) {
-            return 0;
-        }
+        if (nums[left] < nums[right]) return 0;
 
         while (left <= right) {
             int pivot = (right + left) / 2;
