@@ -1,16 +1,12 @@
 <a href="http://peterckim.com"><img src="assets/logo.png" title="Peter Kim" alt="Peter Kim"></a>
 
-# NBA DFS API
+# Algorithms
 
-> A data visualization tool for Fanduel NBA DFS
+> My journey through solving and learning new algorithms/data structures
 
 **Code**
 
 ![Source Code](images/code.gif)
-
-**API**
-
-![API](http://g.recordit.co/pC41e8Wljw.gif)
 
 ---
 
