@@ -159,7 +159,21 @@ public class General {
     }
 
     /**
+     * @problem     33. Search in Rotated Sorted Array
+     * @link        https://leetcode.com/problems/search-in-rotated-sorted-array/
+     * @tags        [Array, Binary Search]
+     * @difficulty  Medium
+     * @param       nums -> [4,5,6,7,0,1,2]
+     * @param       target -> 0
+     * @return      res -> 4
+     */
+    public int search(int[] nums, int target) {
+        return 4;
+    }
+
+    /**
      * @problem     15. 3Sums
+     * @link        https://leetcode.com/problems/3sum/
      * @tags        [Array, Two Pointers]
      * @difficulty  Medium
      * @param       nums -> [-1, 0, 1, 2, -1, 4]
