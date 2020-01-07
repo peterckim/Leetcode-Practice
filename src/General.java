@@ -299,7 +299,7 @@ public class General {
         return res;
 
 
-        /*  BRUTE FORCE ALGORITHM USING A HASH SET. NOT OPTIMIZED AT ALL. VIEW ABOVE ALGORITHM */
+        /*  BRUTE FORCE ALGORITHM USING A HASH SET. IT WORKS, BUT VERY SLOW. NOT OPTIMIZED AT ALL. VIEW ABOVE ALGORITHM INSTEAD */
 
         /*
             List<List<Integer>> res = new LinkedList<>();
