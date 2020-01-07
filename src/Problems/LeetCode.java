@@ -1,10 +1,12 @@
+package Problems;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
 public class LeetCode {
     public static void main(String[] args) {
-
+        System.out.println("hi");
     }
 
 

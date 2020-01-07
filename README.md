@@ -4,6 +4,8 @@
 
 > My journey through solving and learning new algorithms/data structures
 
+This is a collection of algorithms and data structures which I've implemented throughout my years as a coder.
+
 **Code**
 
 ![Source Code](images/code.gif)
