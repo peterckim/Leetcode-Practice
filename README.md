@@ -32,7 +32,8 @@ This is a collection of algorithms and data structures which I've implemented th
 
 > Collection of graph algorithms I have implemented.
 
-* [LeetCode](src/problems/LeetCode.java)
+* [Find shortest path(s) in a Graph from a starting Vertex]
+    - [Dijkstra's algorithm (non-negative weight graphs)](src/graph/Dijkstra.java)
 
 ---
 
