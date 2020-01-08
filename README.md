@@ -63,7 +63,9 @@ This is a collection of algorithms and data structures which I've implemented th
 
 > Collection of problems I have solved.
 
-* [LeetCode](src/problems/LeetCode.java)
+* [LeetCode](src/problems/leetcode)
+    - [Array](src/problems/leetcode/Array.java)
+    - [Dynamic Programming](src/problems/leetcode/DynamicProgramming.java)
 * [HackerRank](src/problems/HackerRank.java)
 
 ---
