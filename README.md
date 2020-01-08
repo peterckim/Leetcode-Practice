@@ -13,6 +13,7 @@ This is a collection of algorithms and data structures which I've implemented th
 - [Data Structures](#data-structures)
 - [Graphs](#graphs)
 - [Search](#search)
+- [Sequences](#sequences)
 - [Sorts](#sorts)
 - [Problems](#problems)
 - [Team](#team)
@@ -41,6 +42,12 @@ This is a collection of algorithms and data structures which I've implemented th
 > Collection of search algorithms I have implemented.
 
 * [Linear Search](src/search/LinearSearch.java)
+
+## Search
+
+> Collection of sequence algorithms I have implemented.
+
+* [Largest sum of contiguous subarray (Kadane's algorithm)](src/sequences/Kadanes.java)
 
 
 ## Sorts
