@@ -42,7 +42,7 @@ This is a collection of algorithms and data structures which I've implemented th
 
 > Collection of search algorithms I have implemented.
 
-* [LeetCode](src/problems/LeetCode.java)
+* [Linear Search](src/search/LinearSearch.java)
 
 ---
 
