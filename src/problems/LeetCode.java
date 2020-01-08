@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * This is a java file with all Leetcode problems I have solved.
+ *
+ * @author Peter Kim <peterckim96@gmail.com>
+ */
 public class LeetCode {
     public static void main(String[] args) {
     }
