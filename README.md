@@ -23,7 +23,7 @@ This is a collection of algorithms and data structures which I've implemented th
 
 > Collection of data structures I have implemented.
 
-* [Graph]
+* Graph
     - [Adjacency List](src/data_structures/GraphAdjList.java)
     - [Adjacency Matrix](src/data_structures/GraphAdjMatrix.java)
 
@@ -33,7 +33,7 @@ This is a collection of algorithms and data structures which I've implemented th
 
 > Collection of graph algorithms I have implemented.
 
-* [Find shortest path(s) in a Graph from a starting Vertex]
+* Find shortest path(s) in a Graph from a starting Vertex
     - [Dijkstra's algorithm (non-negative weight graphs)](src/graph/Dijkstra.java)
 
 ---
