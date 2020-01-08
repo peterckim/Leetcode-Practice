@@ -1,10 +1,19 @@
 package sorts;
 
+/**
+ * In computer science, merge sort (also commonly spelled mergesort) is an efficient, general-purpose, comparison-based sorting algorithm.
+ *
+ * Time Complexities:
+ *      worst-case -> O(N long N)
+ *      best-case -> O(N log N)
+ *      average-case -> O(N log N)
+ *
+ * Space Complexities:
+ *      worst-case -> O(1)
+ *
+ * @see <a href="https://en.wikipedia.org/wiki/Merge_sort">Merge Sort (Wikipedia)</a>
+ */
 public class MergeSort {
-    // Main function
-    public static void main(String[] args) {
-
-    }
 
     // Merge Sort Algorithm
     public static int[] mergeSort(int[] inputArray) {
