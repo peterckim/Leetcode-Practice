@@ -1,17 +1,15 @@
-package problems;
+package problems.leetcode;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * This is a java file with all Leetcode problems I have solved.
+ * This is a java file with all Leetcode array-related problems I have solved.
  *
  * @author Peter Kim <peterckim96@gmail.com>
  */
-public class LeetCode {
-    public static void main(String[] args) {}
-
+public class Array {
     /**
      * @problem     152. Maximum Product Subarray
      * @link        https://leetcode.com/problems/maximum-product-subarray/
@@ -22,7 +20,7 @@ public class LeetCode {
      *
      * @unfinised
      */
-    public int maxProduct(int[] nums) {
+    public static int maxProduct(int[] nums) {
         if (nums.length == 0) return 0;
         if (nums.length == 1) return nums[0];
 
@@ -50,7 +48,7 @@ public class LeetCode {
      * @param       nums -> [3,4,5,1,2]
      * @return      res -> 1
      */
-    public int findMin(int[] nums) {
+    public static int findMin(int[] nums) {
         /* if nums is empty, return -1 */
         if (nums.length == 0) return -1;
 
@@ -63,7 +61,7 @@ public class LeetCode {
     /**
      * @function Find the Minimum
      */
-    public int findMin(int[] nums, int left, int right) {
+    public static int findMin(int[] nums, int left, int right) {
         while (left <= right) {
             int pivot = (left + right) / 2;
 
@@ -91,7 +89,7 @@ public class LeetCode {
      * @param       target -> 0
      * @return      res -> 4
      */
-    public int search(int[] nums, int target) {
+    public static int search(int[] nums, int target) {
         /* If nums is empty, return -1 */
         if (nums.length == 0) return -1;
 
@@ -123,7 +121,7 @@ public class LeetCode {
     /**
      * @function    Binary Search
      */
-    public int search(int[] nums, int target, int left, int right) {
+    public static int search(int[] nums, int target, int left, int right) {
         while (left <= right) {
             int pivot = (right + left) / 2;
 
@@ -144,7 +142,7 @@ public class LeetCode {
     /**
      * @function Find the Rotation Index
      */
-    public int findRotationIndex(int[] nums, int left, int right) {
+    public static int findRotationIndex(int[] nums, int left, int right) {
         if (nums[left] < nums[right]) return 0;
 
         while (left <= right) {
@@ -172,7 +170,7 @@ public class LeetCode {
      * @param       nums -> [-1, 0, 1, 2, -1, 4]
      * @return      res -> [ [-1, 0, 1], [-1, -1, 2] ]
      */
-    public List<List<Integer>> threeSum(int[] nums) {
+    public static List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> res = new LinkedList<>();
 
