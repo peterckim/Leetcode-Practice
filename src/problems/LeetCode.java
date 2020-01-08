@@ -19,6 +19,8 @@ public class LeetCode {
      * @difficulty  Medium
      * @param       nums -> [2,3,-2,4]
      * @return      res -> 6
+     *
+     * @unfinised
      */
     public int maxProduct(int[] nums) {
         /*
