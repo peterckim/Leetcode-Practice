@@ -27,7 +27,6 @@ This is a collection of algorithms and data structures which I've implemented th
     - [Adjacency List](src/data_structures/GraphAdjList.java)
     - [Adjacency Matrix](src/data_structures/GraphAdjMatrix.java)
 
----
 
 ## Graphs
 
@@ -36,7 +35,6 @@ This is a collection of algorithms and data structures which I've implemented th
 * Find shortest path(s) in a Graph from a starting Vertex
     - [Dijkstra's algorithm (non-negative weight graphs)](src/graph/Dijkstra.java)
 
----
 
 ## Search
 
@@ -44,7 +42,6 @@ This is a collection of algorithms and data structures which I've implemented th
 
 * [Linear Search](src/search/LinearSearch.java)
 
----
 
 ## Sorts
 
@@ -52,7 +49,6 @@ This is a collection of algorithms and data structures which I've implemented th
 
 * [Merge Sort](src/sorts/MergeSort.java)
 
----
 
 ## Problems
 
