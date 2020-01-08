@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ceaf1f-fb56-48da-a5dd-693d308f1cf7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/BFS.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Backtrack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Bloomberg.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DFS.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DivideAndConquer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DynamicProgramming.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/General.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Greedy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/HackerRank.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/HashTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/LinkedList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ListNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Strings.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TreeNode.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -451,10 +441,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="53" />
-          <folding>
-            <element signature="e#1474#1475#0" expanded="false" />
-            <element signature="e#1503#1504#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -518,10 +505,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="53" />
-          <folding>
-            <element signature="e#1474#1475#0" expanded="false" />
-            <element signature="e#1503#1504#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
