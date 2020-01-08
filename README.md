@@ -43,7 +43,8 @@ This is a collection of algorithms and data structures which I've implemented th
 
 * [Linear Search](src/search/LinearSearch.java)
 
-## Search
+
+## Sequences
 
 > Collection of sequence algorithms I have implemented.
 
