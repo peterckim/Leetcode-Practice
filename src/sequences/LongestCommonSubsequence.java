@@ -7,8 +7,18 @@ package sequences;
  */
 public class LongestCommonSubsequence {
 
-    public static int longestCommonSubsequence(char[] A, char[] B) {
-        return longestCommonSubsequence(A, B, A.length, B.length);
+    /**
+     * Longest Common Subsequence
+     *
+     * @param   A -> ['A', 'B', 'C', 'D', 'G', 'H']
+     * @param   B -> ['A', 'E', 'D', 'F', 'H', 'R']
+     * @param   method -> "top-down", ^(?!.*(top-down))
+     * @return  res -> 3
+     * @wrapper
+     *
+     */
+    public static int longestCommonSubsequence(char[] A, char[] B, String method) {
+        return (method == "top-down") ? longestCommonSubsequence(A, B, A.length, B.length) : longestCommonSubsequenceBottomUp(A, B, A.length, B.length);
     }
 
     /**
@@ -19,6 +29,7 @@ public class LongestCommonSubsequence {
      * @param   m -> A.length
      * @param   n -> B.length
      * @return  res -> 3
+     * @topdown
      *
      * Time Complexity:
      *  worst-case -> O(2^N);
@@ -41,6 +52,7 @@ public class LongestCommonSubsequence {
      * @param   m -> A.length
      * @param   n -> B.length
      * @return  res -> 3
+     * @bottomup
      *
      * Time Complexity:
      *  worst-case -> O(NM);
