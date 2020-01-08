@@ -10,8 +10,7 @@ import java.util.List;
  * @author Peter Kim <peterckim96@gmail.com>
  */
 public class LeetCode {
-    public static void main(String[] args) {
-    }
+    public static void main(String[] args) {}
 
     /**
      * @problem     152. Maximum Product Subarray
