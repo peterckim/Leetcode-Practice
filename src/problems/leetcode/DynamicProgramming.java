@@ -7,7 +7,9 @@ package problems.leetcode;
  */
 public class DynamicProgramming {
     public static void main(String[] args) {
-        System.out.println(climbStairs(3));
+        /* climbStairs(3, "top-down"); */
+
+        /* coinChange(new int[]{1, 2, 5}, 11, "top-down"); */
     }
 
     /**
@@ -15,6 +17,17 @@ public class DynamicProgramming {
      * @link        https://leetcode.com/problems/climbing-stairs/
      * @tags        [Dynamic Programming]
      * @difficulty  Easy
+     * @param       n -> 3
+     * @param       method -> "top-down", *
+     * @return      res -> 3
+     * @wrapper
+     */
+    public static int climbStairs(int n, String method) {
+        return (method == "top-down") ? climbStairs(n) : climbStairsBottomUp(n);
+    }
+
+    /**
+     * @problem     70. Climbing Stairs
      * @param       n -> 3
      * @return      res -> 3
      * @topdown
@@ -34,9 +47,6 @@ public class DynamicProgramming {
 
     /**
      * @problem     70. Climbing Stairs
-     * @link        https://leetcode.com/problems/climbing-stairs/
-     * @tags        [Dynamic Programming]
-     * @difficulty  Easy
      * @param       n -> 3
      * @return      res -> 3
      * @bottomup
@@ -68,23 +78,57 @@ public class DynamicProgramming {
      * @link        https://leetcode.com/problems/coin-change/
      * @tags        [Dynamic Programming]
      * @difficulty  Medium
-     * @param       coins -> []
-     * @param       amount ->
+     * @param       coins -> [1, 2, 5]
+     * @param       amount -> 11
+     * @param       method -> "top-down", *
      * @return      res -> 3
-     * @topdown
+     * @wrapper
      */
-    public static int coinChange(int[] coins, int amount) {
-        /* Math.min(coinChange(1), coinChange(2), coinChange(3)); */
-        return 0;
+    public static int coinChange(int[] coins, int amount, String method) {
+        if (amount <= 0) return 0;
+
+        return (method == "top-down") ? coinChange(coins, amount, new int[amount]) : coinChangeBottomUp(coins, amount);
     }
 
     /**
      * @problem     322. Coin Change
-     * @link        https://leetcode.com/problems/coin-change/
-     * @tags        [Dynamic Programming]
-     * @difficulty  Medium
-     * @param       coins -> []
-     * @param       amount ->
+     * @param       coins -> [1, 2, 5]
+     * @param       amount -> 11
+     * @param       dp -> []
+     * @return      res -> 3
+     * @topdown
+     */
+    public static int coinChange(int[] coins, int remaining, int[] dp) {
+        /* Base Cases */
+        if (remaining < 0) return -1;
+        if (remaining == 0) return 0;
+
+        /* Memoization Step */
+        if (dp[remaining - 1] != 0) return dp[remaining - 1];
+
+        int min_value = Integer.MAX_VALUE;
+
+        /* Iterate each branch at each level of recursion tree */
+        for (int i = 0; i < coins.length; i++) {
+            /* Get value of child Nodes */
+            int res = coinChange(coins, remaining - coins[i], dp);
+
+            /* If path is valid, check if it is the min value for current root */
+            if (res >= 0 && res < min_value) {
+                min_value = 1 + res;
+            };
+        }
+
+        /* After iterating through each child node from CURRENT ROOT, update dp array with minimum of current subtree */
+        dp[remaining - 1] = (min_value == Integer.MAX_VALUE) ? -1 : min_value;
+
+        return dp[remaining - 1];
+    }
+
+    /**
+     * @problem     322. Coin Change
+     * @param       coins -> [1, 2, 5]
+     * @param       amount -> 11
      * @return      res -> 3
      * @bottomup
      */
