@@ -10,8 +10,45 @@ This is a collection of algorithms and data structures which I've implemented th
 
 ## Table of Contents
 
+- [Data Structures](#data-structures)
+- [Graphs](#graphs)
+- [Search](#search)
+- [Sorts](#sorts)
 - [Problems](#problems)
 - [Team](#team)
+
+---
+
+## Data Structures
+
+> Collection of data structures I have implemented.
+
+* [Find shortest path(s) in a Graph from a starting Vertex]
+    - [Dijkstra's algorithm (non-negative weight graphs)](src/com/jwetherell/algorithms/graph/Dijkstra.java)
+
+---
+
+## Graphs
+
+> Collection of graph algorithms I have implemented.
+
+* [LeetCode](src/problems/LeetCode.java)
+
+---
+
+## Search
+
+> Collection of search algorithms I have implemented.
+
+* [LeetCode](src/problems/LeetCode.java)
+
+---
+
+## Sorts
+
+> Collection of sorting algorithms I have implemented.
+
+* [LeetCode](src/problems/LeetCode.java)
 
 ---
 
