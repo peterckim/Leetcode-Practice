@@ -49,6 +49,7 @@ This is a collection of algorithms and data structures which I've implemented th
 > Collection of sequence algorithms I have implemented.
 
 * [Longest Common Subsequence](src/sequences/LongestCommonSubsequence.java)
+* [Longest Increasing Subsequence](src/sequences/LongestIncreasingSubsequence.java)
 * [Largest sum of contiguous subarray (Kadane's algorithm)](src/sequences/Kadanes.java)
 
 
