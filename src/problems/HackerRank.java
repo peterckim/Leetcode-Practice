@@ -1,8 +1,12 @@
 package problems;
 
 import java.math.BigInteger;
-import java.util.*;
 
+/**
+ * This is a java file with all HackerRank problems I have solved.
+ *
+ * @author Peter Kim <peterckim96@gmail.com>
+ */
 public class HackerRank {
     public static void main(String[] args) {}
 

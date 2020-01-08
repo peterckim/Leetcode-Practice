@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ceaf1f-fb56-48da-a5dd-693d308f1cf7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/problems/LeetCode.java" afterPath="$PROJECT_DIR$/src/problems/LeetCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/problems/HackerRank.java" afterPath="$PROJECT_DIR$/src/problems/HackerRank.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/problems/LeetCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,14 +40,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HackerRank.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HackerRank.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/problems/HackerRank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -175,8 +173,8 @@
         <option value="$PROJECT_DIR$/src/data_structures/GraphAdjList.java" />
         <option value="$PROJECT_DIR$/src/data_structures/GraphAdjMatrix.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/problems/HackerRank.java" />
         <option value="$PROJECT_DIR$/src/problems/LeetCode.java" />
+        <option value="$PROJECT_DIR$/src/problems/HackerRank.java" />
       </list>
     </option>
   </component>
@@ -881,16 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/problems/HackerRank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sorts/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -901,11 +889,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/problems/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/problems/HackerRank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
