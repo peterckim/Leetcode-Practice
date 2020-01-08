@@ -24,7 +24,7 @@ This is a collection of algorithms and data structures which I've implemented th
 > Collection of data structures I have implemented.
 
 * [Find shortest path(s) in a Graph from a starting Vertex]
-    - [Dijkstra's algorithm (non-negative weight graphs)](src/com/jwetherell/algorithms/graph/Dijkstra.java)
+    - [Dijkstra's algorithm (non-negative weight graphs)](src/graph/Dijkstra.java)
 
 ---
 
