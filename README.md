@@ -1,6 +1,6 @@
 <a href="http://peterckim.com"><img src="assets/logo.png" title="Peter Kim" alt="Peter Kim"></a>
 
-# Algorithms
+# Algorithms and Data Structures
 
 > My journey through solving and learning new algorithms/data structures
 
