@@ -18,7 +18,7 @@ public class DynamicProgramming {
      * @tags        [Dynamic Programming]
      * @difficulty  Easy
      * @param       n -> 3
-     * @param       method -> "top-down", *
+     * @param       method -> "top-down", ^(?!.*(top-down))
      * @return      res -> 3
      * @wrapper
      */
@@ -80,7 +80,7 @@ public class DynamicProgramming {
      * @difficulty  Medium
      * @param       coins -> [1, 2, 5]
      * @param       amount -> 11
-     * @param       method -> "top-down", *
+     * @param       method -> "top-down", ^(?!.*(top-down))
      * @return      res -> 3
      * @wrapper
      */
